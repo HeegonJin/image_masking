@@ -1,0 +1,23 @@
+MaskProcess:
+  ext:
+    image: .jpg
+    mask: .png
+  image_size:
+    height: 1080
+    width: 1920
+  kernel_size:
+    height: 7
+    width: 7
+  path:
+    data:
+      x: 'image_with_mask\\x'
+      y: 'image_with_mask\\y'
+    save:
+      bbox: 'bbox_mask_image'
+      polygon: 'polygon_mask_image'
+  label:
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
